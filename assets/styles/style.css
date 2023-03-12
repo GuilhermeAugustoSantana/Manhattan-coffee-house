@@ -1,0 +1,274 @@
+:root {
+   --cor-bege: #c4a47c;
+   --cor-branco: #fff;
+   --cor-preto: #000000;
+   --cor-marrom: #604829;
+   --cor-cinza: #666;
+   --cor-cinza-claro: #acacac;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.secao-limitada {
+   width: 1028px;
+   margin: 0 auto;
+}
+
+.secao-banner,
+.secao-imagem,
+.secao-contatos,
+.secao-horario {
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   display: flex;
+   align-items: center;
+}
+
+/* SECAO TOPO */
+
+header {
+   background-color: var(--cor-marrom);
+   width: 100%;
+   position: fixed;
+   top: 0;
+   z-index: 1;
+   /* visibility: hidden; */
+}
+
+header div {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header img {
+   width: 80px;
+}
+
+nav a {
+   text-decoration: none;
+   margin-right: 20px;
+
+   font-family: "oswald";
+   font-size: 18px;
+   font-weight: 700;
+
+   color: var(--cor-bege);
+   text-shadow: 3px 5px 2px var(--cor-preto);
+   letter-spacing: 2px;
+}
+
+/* FIM SECAO TOPO */
+
+/* SECAO BANNER */
+
+.secao-banner {
+   height: 100vh;
+   background-image: url(../img/parallax-imagem1.png);
+}
+
+.secao-banner h1 {
+   color: var(--cor-branco);
+
+   font-weight: 400;
+   font-family: "Fraunces";
+   font-size: 100px;
+
+   margin: 0 auto;
+}
+
+/* FIM SECAO BANNER */
+
+/* SECAO INFORMAÇÕES */
+
+.secao-informacao {
+   width: 860px;
+   margin: 60px auto;
+
+   text-align: center;
+   line-height: 32px;
+}
+
+.secao-informacao h2 {
+   color: var(--cor-bege);
+
+   font-size: 22px;
+   font-family: "Oswald";
+}
+
+.secao-informacao p {
+   color: var(--cor-cinza);
+   font-family: "Lato";
+}
+
+/* FIM SECAO INFORMAÇÕES */
+
+/* SECAO IMAGENS PARALAX */
+
+.secao-imagem {
+   margin: 0;
+   height: 50vh;
+}
+
+.imagem-paralax-1 {
+   background-image: url(../img/parallax-imagem2.jpg);
+}
+
+.imagem-paralax-2 {
+   background-image: url(../img/parallax-imagem3.jpg);
+}
+
+.secao-imagem h3 {
+   margin: 0 auto;
+   width: 500px;
+   padding: 10px;
+
+   background-color: var(--cor-marrom);
+   color: var(--cor-branco);
+
+   font-size: 24px;
+   font-family: "Fraunces";
+   font-style: italic;
+   letter-spacing: 2px;
+   font-weight: 400;
+   text-align: center;
+}
+
+/* FIM SECAO IMAGENS PARALAX */
+
+/* SECAO CONTATOS */
+
+.secao-contatos {
+   height: 100vh;
+   flex-direction: column;
+   background-image: url(../img/parallax-imagem4.png);
+}
+
+.secao-contatos h2 {
+   width: 500px;
+   padding: 10px;
+   margin: 50px auto;
+
+   font-size: 24px;
+   letter-spacing: 5px;
+   font-family: "Oswald";
+   text-align: center;
+
+   background-color: var(--cor-marrom);
+   color: var(--cor-branco);
+}
+
+.box-contatos {
+   width: 500px;
+   padding: 10px;
+   margin: 50px auto;
+
+   font-family: "Oswald";
+   text-align: center;
+   text-shadow: 0px 6px 8px #000000;
+
+   background-color: var(--cor-marrom);
+   color: var(--cor-branco);
+}
+
+/* FIM SECAO CONTATOS */
+
+/* SECAO HORÁRIOS */
+
+.secao-horario {
+   height: 80vh;
+   flex-direction: column;
+
+   font-family: "Oswald";
+
+   background-image: url(../img/cafeteria.jpg);
+   color: var(--cor-branco);
+}
+
+.secao-horario h2 {
+   margin-top: 100px;
+}
+
+.lista-horario {
+   width: 50%;
+   line-height: 10px;
+   padding: 0;
+}
+
+.lista-horario li {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.lista-horario li h3 {
+   width: 70px;
+}
+
+.lista-horario li div {
+   width: 70%;
+   height: 1px;
+   background-color: var(--cor-branco);
+}
+
+.lista-horario li span {
+   width: 85px;
+   text-align: right;
+}
+
+.lista-horario li:first-child span {
+   color: var(--cor-bege);
+}
+
+/* FIM SECAO HORÁRIOS */
+
+/* SECAO HORÁRIOS */
+
+footer {
+   position: relative;
+   background-color: var(--cor-preto);
+   color: var(--cor-branco);
+
+   line-height: 34px;
+   letter-spacing: 2px;
+   font-weight: 600;
+   font-family: "Lato", sans-serif;
+   text-align: center;
+}
+
+footer div {
+   padding: 20px;
+}
+
+footer p {
+   margin: 0;
+}
+
+footer p span {
+   color: var(--cor-bege);
+}
+
+/* FIM SECAO HORÁRIOS */
+
+.link-voltar-topo {
+   position: absolute;
+    bottom: 80px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/seta-para-cima.png");
+    background-position: center;
+    background-size: cover;
+    background-color: var(--cor-bege);
+
+    border-radius: 4px;
+}
